@@ -1,0 +1,58 @@
+/* 3D Card Effect */
+.todo-item {
+  perspective: 1200px;
+}
+
+.todo-item-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.todo-item:hover .todo-item-inner {
+  transform: rotateY(15deg) rotateX(10deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Vibrant Button Hover Effects */
+button {
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #4caf50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Animation */
+input[type="text"] {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff5722;
+  background-color: #fff3e0;
+  color: #333;
+}
+
+/* Placeholder Animation */
+input[type="text"]::placeholder {
+  transition: color 0.3s;
+}
+
+input[type="text"]:focus::placeholder {
+  color: #ff5722;
+}
+
+/* General Enhancements */
+.bg-dark {
+  background-color: #121212;
+}
+
+.text-light {
+  color: #f0f0f0;
+}
+
+.shadow-strong {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
